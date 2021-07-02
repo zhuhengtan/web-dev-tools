@@ -27,3 +27,17 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: static-page # The branch the action should deploy to.
           FOLDER: build # The folder the action should deploy.
+
+      - name: Send Notification
+        uses: dawidd6/action-send-mail@master
+        with:
+          server_address: smtp.163.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: CSDN Report
+          body: file://email.txt
+          to: zhuhengtan@126.com
+          from: GitHub Actions
+          content_type: text/plain
+          
