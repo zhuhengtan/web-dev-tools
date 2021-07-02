@@ -34,8 +34,8 @@ jobs:
         with:
           server_address: smtp.163.com
           server_port: 465
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
+          username: zhuhengtan@163.com
+          password: Zhuhengtan6250
           subject: 【web-dev-tools发布结果】
           body: ${{steps.deploy.outcome}}
           to: zhuhengtan@126.com
