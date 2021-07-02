@@ -40,5 +40,4 @@ jobs:
           body: ${{steps.deploy.outcome}}
           to: zhuhengtan@126.com
           from: GitHub Actions
-          content_type: text/plain
           
