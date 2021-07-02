@@ -43,7 +43,7 @@
   "scripts": {
     "start": "env-cmd -e development craco start",
     "build": "env-cmd -e production craco build",
-    "deploy": "gh-pages -d build -b static-page"
+    "deploy": "env-cmd -e production craco build && gh-pages -d build -b static-page"
   },
   "eslintConfig": {
     "extends": [
