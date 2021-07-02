@@ -1,0 +1,59 @@
+{
+  "common":{
+    "add":"新增",
+    "delete": "删除",
+    "edit": "编辑"
+  },
+  "category":{
+    "addCategory":"添加板块",
+    "editCategory":"修改板块",
+    "categories":"板块列表",
+    "categoryName":"板块名",
+    "categoryNamePlaceHolder":"请输入板块名",
+    "displayName":"板块展示名",
+    "displayNamePlaceHolder":"请输入板块展示名",
+    "remark":"板块描述"
+  },
+  "metaEvent":{
+    "metaEventManage":"元事件管理",
+    "addMetaEvent":"新增元事件",
+    "searchPlaceHolder":"请输入事件名/显示名",
+    "name":"事件名",
+    "displayName":"显示名",
+    "remark":"备注",
+    "visible":"显示状态",
+    "eventType":"事件类型",
+    "operate":"操作",
+    "visibleTypes":{
+      "show":"显示",
+      "hide":"隐藏"
+    },
+    "eventTypes":{
+      "custom":"自定义事件",
+      "vitrual":"虚拟事件"
+    }
+  },
+  "eventProps":{
+    "name":"属性名",
+    "displayName":"显示名",
+    "dataType":"数据类型",
+    "remark":"备注",
+    "unit":"单位",
+    "visible":"显示状态",
+    "propType":"属性类型",
+    "hasDict":"是否是字典",
+    "propTypes":{
+      "custom":"自定义属性",
+      "common":"公共属性"
+    },
+    "searchPlaceHolder":"请输入搜索"
+  },
+  "userManage":{
+    "addUser":"新增用户",
+    "title": "用户管理"
+  },
+  "userPropsManage": {
+    "addProp": "新增属性",
+    "title": "用户属性管理"
+  }
+}

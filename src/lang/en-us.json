@@ -1,0 +1,19 @@
+{
+  "common":{
+    "add":"Add",
+    "delete": "Delete",
+    "edit": "Edit"
+  },
+  "category":{
+    "addCategory":"Add Category",
+    "editCategory":"Edit Category"
+  },
+  "userManage":{
+    "addUser":"Add User",
+    "title": "User Manage"
+  },
+  "userPropsManage": {
+    "addProp": "Add Prop",
+    "title": "User Props Manage"
+  }
+}
