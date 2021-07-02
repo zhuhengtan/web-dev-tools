@@ -37,7 +37,7 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: 【web-dev-tools发布结果】
-          body: ${{steps.deploy.outcome}}
+          body: 发布成功，链接：https://zhuhengtan.github.io/web-dev-tools
           to: zhuhengtan@126.com
           from: GitHub Actions
           
