@@ -42,7 +42,8 @@
   },
   "scripts": {
     "start": "env-cmd -e development craco start",
-    "build": "env-cmd -e production craco build"
+    "build": "env-cmd -e production craco build",
+    "deploy": "gh-pages -d build -b static-page"
   },
   "eslintConfig": {
     "extends": [
@@ -79,6 +80,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.2.1"
   }
 }
