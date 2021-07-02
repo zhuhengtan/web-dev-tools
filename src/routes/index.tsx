@@ -10,7 +10,9 @@ const routes: RouteConfig[] = [
     component: Homepage,
   },
   {
-    path: '/json-to-interface',
+    path: `${
+      process.env.NODE_ENV === 'production' ? '/web-dev-tools' : ''
+    }/json-to-interface`,
     component: JsonToInterface,
   },
 ]
