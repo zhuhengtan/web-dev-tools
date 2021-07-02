@@ -6,13 +6,17 @@ import { RouteConfig } from 'react-router-config'
 
 const routes: RouteConfig[] = [
   {
-    path: '/',
+    path: `${
+      process.env.NODE_ENV === 'production' ? process.env.PUBLIC_URL : ''
+    }/`,
+    exact: true,
     component: Homepage,
   },
   {
     path: `${
-      process.env.NODE_ENV === 'production' ? '/web-dev-tools' : ''
+      process.env.NODE_ENV === 'production' ? process.env.PUBLIC_URL : ''
     }/json-to-interface`,
+    exact: true,
     component: JsonToInterface,
   },
 ]
