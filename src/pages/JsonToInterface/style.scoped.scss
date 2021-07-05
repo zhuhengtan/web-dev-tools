@@ -1,0 +1,28 @@
+.json-to-interface-container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+  textarea{
+    width: 350px;
+    height: 600px;
+    border: 1px solid #CCC;
+    padding: 10px;
+    outline: none;
+    margin-left: 20px;
+  }
+  .transfer-btn{
+    width:80px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 20px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    &:hover{
+      cursor: pointer;
+      border: 1px solid #EEE;
+    }
+  }
+}
