@@ -70,11 +70,13 @@ const JsonToInterface: React.FC = () => {
                 Array.from(objectKeyMap).forEach(([key, typeList]) => {
                   tmp += `\n${whitespace}${propertyWhitespace}${key}`
                   const tmpTypeList = Array.from(new Set(typeList))
-                  if (tmpTypeList.indexOf('undefined') > 0) {
+                  if (tmpTypeList.indexOf('undefined') >= 0) {
                     tmp += '?'
                   }
                   tmp += ': '
-                  tmp += tmpTypeList.join(' | ')
+                  tmp += tmpTypeList
+                    .filter((item) => item !== 'undefined')
+                    .join(' | ')
                 })
                 tmp += `\n${propertyWhitespace}}`
               } else {
