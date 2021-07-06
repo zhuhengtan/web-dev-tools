@@ -3,5 +3,13 @@ interface Window {
 }
 
 interface JsonObject {
-  [key: string]: number | string | JsonObject | boolean
+  [key: string]:
+    | number
+    | number[]
+    | string
+    | string[]
+    | boolean
+    | boolean[]
+    | JsonObject
+    | JsonObject[]
 }
