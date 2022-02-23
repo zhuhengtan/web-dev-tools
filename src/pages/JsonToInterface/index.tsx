@@ -21,8 +21,10 @@ const JsonToInterface: React.FC = () => {
           propertyWhitespace += '  '
         }
         if (Array.isArray(obj)) {
-          // 如果是数组，要判断元素是否是基础类型，并且还要判断每个元素类型是否一样，长度为2且数据类型不同，则认为是元组，否则认为是联合类型的数组
-          if (
+          if (obj.length === 0) {
+            tmp += `[enpty array]`
+          } else if (
+            // 如果是数组，要判断元素是否是基础类型，并且还要判断每个元素类型是否一样，长度为2且数据类型不同，则认为是元组，否则认为是联合类型的数组
             obj.length === 2 &&
             getRealTypeOfObj(obj[0]) !== getRealTypeOfObj(obj[1])
           ) {
@@ -105,6 +107,8 @@ const JsonToInterface: React.FC = () => {
             } else if (typeof (obj as JsonObject)[key] === 'object') {
               if ((obj as JsonObject)[key] === null) {
                 tmp += `\n${propertyWhitespace}${key}: null | [to be determined]`
+              } else if (Object.keys((obj as JsonObject)[key]).length === 0) {
+                tmp += `\n${propertyWhitespace}${key}: [empty object]`
               } else {
                 tmp += `\n${propertyWhitespace}${key}: ${dealObject(
                   (obj as JsonObject)[key] as unknown,
@@ -134,8 +138,13 @@ const JsonToInterface: React.FC = () => {
         <meta charSet="utf-8" />
         <title>json转ts interface</title>
       </Helmet>
+      <p className="tip">* 长度为2的数组，会被视作元组</p>
       <div className="json-to-interface-container">
-        <textarea placeholder="请输入json" onChange={onJsonValueChange} />
+        <textarea
+          placeholder="请输入json"
+          onChange={onJsonValueChange}
+          onPaste={onJsonValueChange}
+        />
         {/* <div className="transfer-btn">转换</div> */}
         <textarea disabled placeholder="interface" value={interfaceValue} />
       </div>
