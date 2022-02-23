@@ -103,10 +103,14 @@ const JsonToInterface: React.FC = () => {
                 level + 1
               )}`
             } else if (typeof (obj as JsonObject)[key] === 'object') {
-              tmp += `\n${propertyWhitespace}${key}: ${dealObject(
-                (obj as JsonObject)[key] as unknown,
-                level + 1
-              )}`
+              if ((obj as JsonObject)[key] === null) {
+                tmp += `\n${propertyWhitespace}${key}: null | [to be determined]`
+              } else {
+                tmp += `\n${propertyWhitespace}${key}: ${dealObject(
+                  (obj as JsonObject)[key] as unknown,
+                  level + 1
+                )}`
+              }
             } else {
               tmp += `\n${propertyWhitespace}${key}: ${typeof (obj as JsonObject)[
                 key
