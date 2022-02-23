@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/web-dev-tools/static/css/main.25ff39e0.chunk.css",
-    "main.js": "/web-dev-tools/static/js/main.2e63bb28.chunk.js",
-    "main.js.map": "/web-dev-tools/static/js/main.2e63bb28.chunk.js.map",
+    "main.css": "/web-dev-tools/static/css/main.5a92308d.chunk.css",
+    "main.js": "/web-dev-tools/static/js/main.a5943356.chunk.js",
+    "main.js.map": "/web-dev-tools/static/js/main.a5943356.chunk.js.map",
     "runtime-main.js": "/web-dev-tools/static/js/runtime-main.8ea36fcf.js",
     "runtime-main.js.map": "/web-dev-tools/static/js/runtime-main.8ea36fcf.js.map",
     "static/js/2.becbc631.chunk.js": "/web-dev-tools/static/js/2.becbc631.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.5538f33b.chunk.js": "/web-dev-tools/static/js/3.5538f33b.chunk.js",
     "static/js/3.5538f33b.chunk.js.map": "/web-dev-tools/static/js/3.5538f33b.chunk.js.map",
     "index.html": "/web-dev-tools/index.html",
-    "static/css/main.25ff39e0.chunk.css.map": "/web-dev-tools/static/css/main.25ff39e0.chunk.css.map",
+    "static/css/main.5a92308d.chunk.css.map": "/web-dev-tools/static/css/main.5a92308d.chunk.css.map",
     "static/js/2.becbc631.chunk.js.LICENSE.txt": "/web-dev-tools/static/js/2.becbc631.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8ea36fcf.js",
     "static/js/2.becbc631.chunk.js",
-    "static/css/main.25ff39e0.chunk.css",
-    "static/js/main.2e63bb28.chunk.js"
+    "static/css/main.5a92308d.chunk.css",
+    "static/js/main.a5943356.chunk.js"
   ]
 }
