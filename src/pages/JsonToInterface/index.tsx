@@ -116,9 +116,9 @@ const JsonToInterface: React.FC = () => {
                 )}`
               }
             } else {
-              tmp += `\n${propertyWhitespace}${key}: ${typeof (obj as JsonObject)[
-                key
-              ]}`
+              tmp += `\n${propertyWhitespace}${key}: ${typeof (
+                obj as JsonObject
+              )[key]}`
             }
           })
           tmp += `\n${whitespace}}`
