@@ -19,6 +19,7 @@
     "axios": "^0.21.1",
     "craco-less": "^1.17.1",
     "craco-plugin-scoped-css": "^1.1.1",
+    "form-render": "^2.3.6",
     "i18next": "^20.2.2",
     "i18next-browser-languagedetector": "^6.1.0",
     "immer": "^9.0.2",
